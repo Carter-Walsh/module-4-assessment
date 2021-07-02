@@ -10,3 +10,12 @@ def sales_reports(log_file): # def is used to create a new function, in this cas
 
 
 sales_reports(log_file) # this is what actually calls the function we defined on line 4
+
+def melons_over_ten(log_file):
+    for line in log_file:
+        line = line.rstrip()
+        number_of_melons = line[16:17]
+        if int(number_of_melons) > 10:
+            print(number_of_melons)
+
+melons_over_ten(log_file)
